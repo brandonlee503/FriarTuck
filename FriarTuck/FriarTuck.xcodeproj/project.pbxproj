@@ -1,0 +1,591 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6F2B7CCC220C0BBB00B21476 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F2B7CCB220C0BBB00B21476 /* AppDelegate.swift */; };
+		6F2B7CCE220C0BBB00B21476 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F2B7CCD220C0BBB00B21476 /* ViewController.swift */; };
+		6F2B7CD1220C0BBB00B21476 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6F2B7CCF220C0BBB00B21476 /* Main.storyboard */; };
+		6F2B7CD3220C0BBD00B21476 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6F2B7CD2220C0BBD00B21476 /* Assets.xcassets */; };
+		6F2B7CD6220C0BBD00B21476 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6F2B7CD4220C0BBD00B21476 /* LaunchScreen.storyboard */; };
+		6F2B7CE1220C0BBD00B21476 /* FriarTuckTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F2B7CE0220C0BBD00B21476 /* FriarTuckTests.swift */; };
+		6F2B7CEC220C0BBD00B21476 /* FriarTuckUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F2B7CEB220C0BBD00B21476 /* FriarTuckUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		6F2B7CDD220C0BBD00B21476 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6F2B7CC0220C0BBB00B21476 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6F2B7CC7220C0BBB00B21476;
+			remoteInfo = FriarTuck;
+		};
+		6F2B7CE8220C0BBD00B21476 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6F2B7CC0220C0BBB00B21476 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6F2B7CC7220C0BBB00B21476;
+			remoteInfo = FriarTuck;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		6F2B7CC8220C0BBB00B21476 /* FriarTuck.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FriarTuck.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6F2B7CCB220C0BBB00B21476 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		6F2B7CCD220C0BBB00B21476 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		6F2B7CD0220C0BBB00B21476 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		6F2B7CD2220C0BBD00B21476 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6F2B7CD5220C0BBD00B21476 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		6F2B7CD7220C0BBD00B21476 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6F2B7CDC220C0BBD00B21476 /* FriarTuckTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FriarTuckTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6F2B7CE0220C0BBD00B21476 /* FriarTuckTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriarTuckTests.swift; sourceTree = "<group>"; };
+		6F2B7CE2220C0BBD00B21476 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6F2B7CE7220C0BBD00B21476 /* FriarTuckUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FriarTuckUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6F2B7CEB220C0BBD00B21476 /* FriarTuckUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriarTuckUITests.swift; sourceTree = "<group>"; };
+		6F2B7CED220C0BBD00B21476 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6F2B7CC5220C0BBB00B21476 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6F2B7CD9220C0BBD00B21476 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6F2B7CE4220C0BBD00B21476 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6F2B7CBF220C0BBB00B21476 = {
+			isa = PBXGroup;
+			children = (
+				6F2B7CCA220C0BBB00B21476 /* FriarTuck */,
+				6F2B7CDF220C0BBD00B21476 /* FriarTuckTests */,
+				6F2B7CEA220C0BBD00B21476 /* FriarTuckUITests */,
+				6F2B7CC9220C0BBB00B21476 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		6F2B7CC9220C0BBB00B21476 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6F2B7CC8220C0BBB00B21476 /* FriarTuck.app */,
+				6F2B7CDC220C0BBD00B21476 /* FriarTuckTests.xctest */,
+				6F2B7CE7220C0BBD00B21476 /* FriarTuckUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6F2B7CCA220C0BBB00B21476 /* FriarTuck */ = {
+			isa = PBXGroup;
+			children = (
+				6F2B7CCB220C0BBB00B21476 /* AppDelegate.swift */,
+				6F2B7CCD220C0BBB00B21476 /* ViewController.swift */,
+				6F2B7CCF220C0BBB00B21476 /* Main.storyboard */,
+				6F2B7CD2220C0BBD00B21476 /* Assets.xcassets */,
+				6F2B7CD4220C0BBD00B21476 /* LaunchScreen.storyboard */,
+				6F2B7CD7220C0BBD00B21476 /* Info.plist */,
+			);
+			path = FriarTuck;
+			sourceTree = "<group>";
+		};
+		6F2B7CDF220C0BBD00B21476 /* FriarTuckTests */ = {
+			isa = PBXGroup;
+			children = (
+				6F2B7CE0220C0BBD00B21476 /* FriarTuckTests.swift */,
+				6F2B7CE2220C0BBD00B21476 /* Info.plist */,
+			);
+			path = FriarTuckTests;
+			sourceTree = "<group>";
+		};
+		6F2B7CEA220C0BBD00B21476 /* FriarTuckUITests */ = {
+			isa = PBXGroup;
+			children = (
+				6F2B7CEB220C0BBD00B21476 /* FriarTuckUITests.swift */,
+				6F2B7CED220C0BBD00B21476 /* Info.plist */,
+			);
+			path = FriarTuckUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6F2B7CC7220C0BBB00B21476 /* FriarTuck */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6F2B7CF0220C0BBD00B21476 /* Build configuration list for PBXNativeTarget "FriarTuck" */;
+			buildPhases = (
+				6F2B7CC4220C0BBB00B21476 /* Sources */,
+				6F2B7CC5220C0BBB00B21476 /* Frameworks */,
+				6F2B7CC6220C0BBB00B21476 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FriarTuck;
+			productName = FriarTuck;
+			productReference = 6F2B7CC8220C0BBB00B21476 /* FriarTuck.app */;
+			productType = "com.apple.product-type.application";
+		};
+		6F2B7CDB220C0BBD00B21476 /* FriarTuckTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6F2B7CF3220C0BBD00B21476 /* Build configuration list for PBXNativeTarget "FriarTuckTests" */;
+			buildPhases = (
+				6F2B7CD8220C0BBD00B21476 /* Sources */,
+				6F2B7CD9220C0BBD00B21476 /* Frameworks */,
+				6F2B7CDA220C0BBD00B21476 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6F2B7CDE220C0BBD00B21476 /* PBXTargetDependency */,
+			);
+			name = FriarTuckTests;
+			productName = FriarTuckTests;
+			productReference = 6F2B7CDC220C0BBD00B21476 /* FriarTuckTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		6F2B7CE6220C0BBD00B21476 /* FriarTuckUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6F2B7CF6220C0BBD00B21476 /* Build configuration list for PBXNativeTarget "FriarTuckUITests" */;
+			buildPhases = (
+				6F2B7CE3220C0BBD00B21476 /* Sources */,
+				6F2B7CE4220C0BBD00B21476 /* Frameworks */,
+				6F2B7CE5220C0BBD00B21476 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6F2B7CE9220C0BBD00B21476 /* PBXTargetDependency */,
+			);
+			name = FriarTuckUITests;
+			productName = FriarTuckUITests;
+			productReference = 6F2B7CE7220C0BBD00B21476 /* FriarTuckUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6F2B7CC0220C0BBB00B21476 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = "Lee, Brandon";
+				TargetAttributes = {
+					6F2B7CC7220C0BBB00B21476 = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					6F2B7CDB220C0BBD00B21476 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 6F2B7CC7220C0BBB00B21476;
+					};
+					6F2B7CE6220C0BBD00B21476 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 6F2B7CC7220C0BBB00B21476;
+					};
+				};
+			};
+			buildConfigurationList = 6F2B7CC3220C0BBB00B21476 /* Build configuration list for PBXProject "FriarTuck" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 6F2B7CBF220C0BBB00B21476;
+			productRefGroup = 6F2B7CC9220C0BBB00B21476 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6F2B7CC7220C0BBB00B21476 /* FriarTuck */,
+				6F2B7CDB220C0BBD00B21476 /* FriarTuckTests */,
+				6F2B7CE6220C0BBD00B21476 /* FriarTuckUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6F2B7CC6220C0BBB00B21476 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6F2B7CD6220C0BBD00B21476 /* LaunchScreen.storyboard in Resources */,
+				6F2B7CD3220C0BBD00B21476 /* Assets.xcassets in Resources */,
+				6F2B7CD1220C0BBB00B21476 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6F2B7CDA220C0BBD00B21476 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6F2B7CE5220C0BBD00B21476 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6F2B7CC4220C0BBB00B21476 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6F2B7CCE220C0BBB00B21476 /* ViewController.swift in Sources */,
+				6F2B7CCC220C0BBB00B21476 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6F2B7CD8220C0BBD00B21476 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6F2B7CE1220C0BBD00B21476 /* FriarTuckTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6F2B7CE3220C0BBD00B21476 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6F2B7CEC220C0BBD00B21476 /* FriarTuckUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6F2B7CDE220C0BBD00B21476 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6F2B7CC7220C0BBB00B21476 /* FriarTuck */;
+			targetProxy = 6F2B7CDD220C0BBD00B21476 /* PBXContainerItemProxy */;
+		};
+		6F2B7CE9220C0BBD00B21476 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6F2B7CC7220C0BBB00B21476 /* FriarTuck */;
+			targetProxy = 6F2B7CE8220C0BBD00B21476 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		6F2B7CCF220C0BBB00B21476 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6F2B7CD0220C0BBB00B21476 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		6F2B7CD4220C0BBD00B21476 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6F2B7CD5220C0BBD00B21476 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		6F2B7CEE220C0BBD00B21476 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		6F2B7CEF220C0BBD00B21476 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6F2B7CF1220C0BBD00B21476 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 27G39RU5P8;
+				INFOPLIST_FILE = FriarTuck/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = brandonlee.FriarTuckApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		6F2B7CF2220C0BBD00B21476 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 27G39RU5P8;
+				INFOPLIST_FILE = FriarTuck/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = brandonlee.FriarTuckApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		6F2B7CF4220C0BBD00B21476 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 27G39RU5P8;
+				INFOPLIST_FILE = FriarTuckTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = brandonlee.FriarTuckTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FriarTuck.app/FriarTuck";
+			};
+			name = Debug;
+		};
+		6F2B7CF5220C0BBD00B21476 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 27G39RU5P8;
+				INFOPLIST_FILE = FriarTuckTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = brandonlee.FriarTuckTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FriarTuck.app/FriarTuck";
+			};
+			name = Release;
+		};
+		6F2B7CF7220C0BBD00B21476 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 27G39RU5P8;
+				INFOPLIST_FILE = FriarTuckUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = brandonlee.FriarTuckUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = FriarTuck;
+			};
+			name = Debug;
+		};
+		6F2B7CF8220C0BBD00B21476 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 27G39RU5P8;
+				INFOPLIST_FILE = FriarTuckUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = brandonlee.FriarTuckUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = FriarTuck;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6F2B7CC3220C0BBB00B21476 /* Build configuration list for PBXProject "FriarTuck" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6F2B7CEE220C0BBD00B21476 /* Debug */,
+				6F2B7CEF220C0BBD00B21476 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6F2B7CF0220C0BBD00B21476 /* Build configuration list for PBXNativeTarget "FriarTuck" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6F2B7CF1220C0BBD00B21476 /* Debug */,
+				6F2B7CF2220C0BBD00B21476 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6F2B7CF3220C0BBD00B21476 /* Build configuration list for PBXNativeTarget "FriarTuckTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6F2B7CF4220C0BBD00B21476 /* Debug */,
+				6F2B7CF5220C0BBD00B21476 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6F2B7CF6220C0BBD00B21476 /* Build configuration list for PBXNativeTarget "FriarTuckUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6F2B7CF7220C0BBD00B21476 /* Debug */,
+				6F2B7CF8220C0BBD00B21476 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 6F2B7CC0220C0BBB00B21476 /* Project object */;
+}
