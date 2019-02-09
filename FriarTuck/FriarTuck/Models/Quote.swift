@@ -10,27 +10,27 @@ import Foundation
 
 /// Generated via QuickType
 struct Quote: Codable {
-	let symbol, companyName, primaryExchange, sector: String
-	let calculationPrice: String
-	let quoteOpen: Double
-	let openTime: Int
-	let close: Double
-	let closeTime: Int
-	let high, low, latestPrice: Double
-	let latestSource, latestTime: String
-	let latestUpdate, latestVolume: Int
-	let iexRealtimePrice: Double
-	let iexRealtimeSize, iexLastUpdated: Int
-	let delayedPrice: Double
-	let delayedPriceTime: Int
-	let extendedPrice, extendedChange, extendedChangePercent: Double
-	let extendedPriceTime: Int
-	let previousClose, change, changePercent, iexMarketPercent: Double
-	let iexVolume, avgTotalVolume, iexBidPrice, iexBidSize: Int
-	let iexAskPrice, iexAskSize, marketCap: Int
-	let peRatio, week52High: Double
-	let week52Low: Int
-	let ytdChange: Double
+	let symbol, companyName, primaryExchange, sector: String?
+	let calculationPrice: String?
+	let quoteOpen: Double?
+	let openTime: Int?
+	let close: Double?
+	let closeTime: Int?
+	let high, low, latestPrice: Double?
+	let latestSource, latestTime: String?
+	let latestUpdate, latestVolume: Int?
+	let iexRealtimePrice: Double?
+	let iexRealtimeSize, iexLastUpdated: Int?
+	let delayedPrice: Double?
+	let delayedPriceTime: Int?
+	let extendedPrice, extendedChange, extendedChangePercent: Double?
+	let extendedPriceTime: Int?
+	let previousClose, change, changePercent, iexMarketPercent: Double?
+	let iexVolume, avgTotalVolume, iexBidPrice, iexBidSize: Int?
+	let iexAskPrice, iexAskSize, marketCap: Int?
+	let peRatio, week52High: Double?
+	let week52Low: Int?
+	let ytdChange: Double?
 	
 	enum CodingKeys: String, CodingKey {
 		case symbol, companyName, primaryExchange, sector, calculationPrice
