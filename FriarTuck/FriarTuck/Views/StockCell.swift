@@ -36,12 +36,13 @@ class StockCell: UITableViewCell {
 		symbolLabel.font = UIFont.systemFont(ofSize: 36)
 		symbolLabel.textColor = .black
 		symbolLabel.lineBreakMode = .byWordWrapping
-//		symbolLabel.accessibilityIdentifier = ""
+		symbolLabel.accessibilityIdentifier = "symbol_label"
 		addSubview(symbolLabel)
 		
 		priceLabel.font = UIFont.systemFont(ofSize: 24)
 		priceLabel.textColor = .black
 		priceLabel.lineBreakMode = .byWordWrapping
+		priceLabel.accessibilityIdentifier = "price_label"
 		addSubview(priceLabel)
 	}
 	
@@ -52,14 +53,12 @@ class StockCell: UITableViewCell {
 		NSLayoutConstraint.activate([
 			symbolLabel.leftAnchor.constraint(equalTo: leftAnchor, constant: 10),
 			symbolLabel.centerYAnchor.constraint(equalTo: centerYAnchor)
-			])
+		])
 		
 		NSLayoutConstraint.activate([			
 			priceLabel.rightAnchor.constraint(equalTo: rightAnchor, constant: -10),
 			priceLabel.centerYAnchor.constraint(equalTo: centerYAnchor)
-			])
-		
-		
+		])
 	}
 	
 	

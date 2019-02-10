@@ -25,7 +25,7 @@ class FriarTuckUITests: XCTestCase {
 		super.tearDown()
     }
 	
-	func testFetch() {
+	func testStockTableLabels() {
 		let cell0 = app.cells["cell_0"]
 		let cell1 = app.cells["cell_1"]
 		let cell2 = app.cells["cell_2"]
@@ -34,6 +34,13 @@ class FriarTuckUITests: XCTestCase {
 		XCTAssertTrue(cell1.exists)
 		XCTAssertTrue(cell2.exists)
 		
-		cell0.tap()
+		// Check cell labels
+		XCTAssertTrue(cell0.staticTexts["symbol_label"].exists)
+		XCTAssertTrue(cell1.staticTexts["symbol_label"].exists)
+		XCTAssertTrue(cell2.staticTexts["symbol_label"].exists)
+		
+		XCTAssertTrue(cell0.staticTexts["price_label"].exists)
+		XCTAssertTrue(cell1.staticTexts["price_label"].exists)
+		XCTAssertTrue(cell2.staticTexts["price_label"].exists)
 	}
 }
