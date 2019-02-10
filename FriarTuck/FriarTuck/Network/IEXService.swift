@@ -14,18 +14,17 @@ typealias QuoteResult 	= (Quote) -> ()
 
 class IEXService {
 	
+	// MARK: - PROPERTIES
+	
 	fileprivate let urlScheme = "https"
 	fileprivate let urlHost	  = "api.iextrading.com"
-	fileprivate let defaultSession = URLSession(configuration: .default)
 	
-	fileprivate var dataTask: URLSessionDataTask?
-	
+	// MARK: - NETWORK
 	
 	public func getStockQuote(_ stockSymbol: String, completion: @escaping QuoteResult) {
-		
-		let quotePath = "/1.0/stock/\(stockSymbol)/quote/\(stockSymbol)"
+		let quotePath = "/1.0/stock/\(stockSymbol.lowercased())/quote/\(stockSymbol)"
+
 		var urlComponents = URLComponents()
-		
 		urlComponents.scheme 	= urlScheme
 		urlComponents.host		= urlHost
 		urlComponents.path 		= quotePath
@@ -35,23 +34,20 @@ class IEXService {
 		}
 		
 		baseNetworkCall(url: url) { statusCode, data in
+			print(url)
 			guard let data = data, let decodedQuote = self.decodeQuote(data) else {
 				return assertionFailure("Cannot decode quote data!")
 			}
-			
-			completion(decodedQuote)
+			DispatchQueue.main.async {
+				completion(decodedQuote)
+			}
 		}
 	}
 		
 	// MARK: - UTILITIES
 	
 	public func baseNetworkCall(url: URL, completion: @escaping NetworkResult) {
-		
-		dataTask?.cancel()
-		
-		dataTask = defaultSession.dataTask(with: url) { data, response, error in
-			defer { self.dataTask = nil }
-			
+		let dataTask = URLSession.shared.dataTask(with: url) { data, response, error in			
 			if let error = error {
 				print(error)
 			} else if let data = data, let response = response as? HTTPURLResponse {
@@ -61,7 +57,7 @@ class IEXService {
 			}
 		}
 		
-		dataTask?.resume()
+		dataTask.resume()
 	}
 	
 	private func decodeQuote(_ data: Data) -> Quote? {

@@ -65,6 +65,6 @@ class QuoteTests: XCTestCase {
 		XCTAssertEqual(quoteObject.symbol, "AAPL")
 		XCTAssertEqual(quoteObject.companyName, "Apple Inc.")
 		XCTAssertEqual(quoteObject.marketCap, 821590387200)
-		XCTAssertEqual(quoteObject.iexRealtimePrice, 174.28)
+		XCTAssertEqual(quoteObject.latestPrice, 174.24)
 	}
 }
