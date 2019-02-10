@@ -25,7 +25,9 @@ class FriarTuckUITests: XCTestCase {
 		super.tearDown()
     }
 	
-	func testStockTableLabels() {
+	func testStockTableUX() {
+		
+		// Check StockTable cell labels
 		let cell0 = app.cells["cell_0"]
 		let cell1 = app.cells["cell_1"]
 		let cell2 = app.cells["cell_2"]
@@ -34,13 +36,51 @@ class FriarTuckUITests: XCTestCase {
 		XCTAssertTrue(cell1.exists)
 		XCTAssertTrue(cell2.exists)
 		
-		// Check cell labels
-		XCTAssertTrue(cell0.staticTexts["symbol_label"].exists)
-		XCTAssertTrue(cell1.staticTexts["symbol_label"].exists)
-		XCTAssertTrue(cell2.staticTexts["symbol_label"].exists)
+		XCTAssertTrue(cell0.staticTexts["left_label"].exists)
+		XCTAssertTrue(cell1.staticTexts["left_label"].exists)
+		XCTAssertTrue(cell2.staticTexts["left_label"].exists)
 		
-		XCTAssertTrue(cell0.staticTexts["price_label"].exists)
-		XCTAssertTrue(cell1.staticTexts["price_label"].exists)
-		XCTAssertTrue(cell2.staticTexts["price_label"].exists)
+		XCTAssertTrue(cell0.staticTexts["right_label"].exists)
+		XCTAssertTrue(cell1.staticTexts["right_label"].exists)
+		XCTAssertTrue(cell2.staticTexts["right_label"].exists)
+	}
+	
+	func testDetailControllerNavigation() {
+		let firstCell = app.cells.firstMatch
+		firstCell.tap()
+		
+		XCTAssertTrue(app.navigationBars.buttons["Friar Tuck"].exists)
+	}
+	
+	func testDetailControllerUX() {
+		let firstCell = app.cells.firstMatch
+		firstCell.tap()
+		
+		let titleCell = app.cells["detail_cell_0"]
+		let detailCell1 = app.cells["detail_cell_1"]
+		let detailCell2 = app.cells["detail_cell_2"]
+		let detailCell3 = app.cells["detail_cell_3"]
+		let detailCell4 = app.cells["detail_cell_4"]
+		
+		XCTAssertTrue(titleCell.exists)
+		XCTAssertTrue(detailCell1.exists)
+		XCTAssertTrue(detailCell2.exists)
+		XCTAssertTrue(detailCell3.exists)
+		XCTAssertTrue(detailCell4.exists)
+		
+		XCTAssertTrue(titleCell.staticTexts["left_label"].exists)
+		XCTAssertTrue(titleCell.staticTexts["right_label"].label.count == 0) // No corresponding details with title
+		
+		XCTAssertEqual(detailCell1.staticTexts["left_label"].label, "Latest")
+		XCTAssertTrue(detailCell1.staticTexts["right_label"].exists)
+		
+		XCTAssertEqual(detailCell2.staticTexts["left_label"].label, "High")
+		XCTAssertTrue(detailCell2.staticTexts["right_label"].exists)
+		
+		XCTAssertEqual(detailCell3.staticTexts["left_label"].label, "Low")
+		XCTAssertTrue(detailCell3.staticTexts["right_label"].exists)
+		
+		XCTAssertEqual(detailCell4.staticTexts["left_label"].label, "P/E Ratio")
+		XCTAssertTrue(detailCell4.staticTexts["right_label"].exists)
 	}
 }

@@ -10,18 +10,25 @@ import UIKit
 
 class StockTableController: UITableViewController {
 	
+	// MARK: - PROPERTIES
+	
 	var stockData: [Quote] = []
 	let iexService = IEXService()
+	
+	// MARK: - VIEW LIFECYCLE
 		
 	override func viewDidLoad() {
 		super.viewDidLoad()
-
+		
 		submitQueries()
-		tableView.register(StockCell.self, forCellReuseIdentifier: stockCellReuseIdentifier)
+
+		tableView.register(GenericStockCell.self, forCellReuseIdentifier: stockCellReuseIdentifier)
+		self.title = "Friar Tuck"
+		tableView.tableFooterView = UIView()
 	}
 	
 	func submitQueries() {
-		for stock in ["AAPL", "AMZN", "NKE"] {
+		for stock in ["AAPL", "AMZN", "NKE", "GOOG", "MSFT", "EBAY"] {
 			iexService.getStockQuote(stock) { quote in
 				self.stockData.append(quote)
 				self.tableView.reloadData()
@@ -29,17 +36,17 @@ class StockTableController: UITableViewController {
 		}
 	}
 	
-	// MARK: - Table view data source
+	// MARK: - TABLE VIEW DATA SOURCE
 	
 	override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
 		return stockData.count
 	}
 	
 	override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-		if let cell = tableView.dequeueReusableCell(withIdentifier: stockCellReuseIdentifier, for: indexPath) as? StockCell {
-			cell.symbolLabel.text = stockData[indexPath.row].symbol
+		if let cell = tableView.dequeueReusableCell(withIdentifier: stockCellReuseIdentifier, for: indexPath) as? GenericStockCell {
+			cell.leftLabel.text = stockData[indexPath.row].symbol
 			if let latestPrice = stockData[indexPath.row].latestPrice {
-				cell.priceLabel.text = "$\(String(describing: latestPrice))"
+				cell.rightLabel.text = "$\(String(describing: latestPrice))"
 			}
 			cell.accessibilityIdentifier = "cell_\(indexPath.row)"
 			
@@ -51,5 +58,13 @@ class StockTableController: UITableViewController {
 	
 	override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
 		return 100
-	} 
+	}
+	
+	// MARK: - NAVIGATION
+	
+	override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+		let detailVC = StockDetailController()
+		detailVC.quote = stockData[indexPath.row]
+		navigationController?.pushViewController(detailVC, animated: true)
+	}
 }
