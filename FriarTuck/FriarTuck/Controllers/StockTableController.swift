@@ -12,6 +12,7 @@ class StockTableController: UITableViewController {
 	
 	// MARK: - PROPERTIES
 	
+	var stocks: [String] = []
 	var stockData: [Quote] = []
 	let iexService = IEXService()
 	
@@ -21,14 +22,16 @@ class StockTableController: UITableViewController {
 		super.viewDidLoad()
 		
 		submitQueries()
-
 		tableView.register(GenericStockCell.self, forCellReuseIdentifier: stockCellReuseIdentifier)
 		self.title = "Friar Tuck"
 		tableView.tableFooterView = UIView()
 	}
 	
+	// MARK: - UTILITIES
+	
+	/// Grabs root stocks set in AppDelegate and fetch
 	func submitQueries() {
-		for stock in ["AAPL", "AMZN", "NKE", "GOOG", "MSFT", "EBAY"] {
+		for stock in stocks {
 			iexService.getStockQuote(stock) { quote in
 				self.stockData.append(quote)
 				self.tableView.reloadData()

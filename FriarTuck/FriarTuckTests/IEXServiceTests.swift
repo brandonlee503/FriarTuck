@@ -33,7 +33,6 @@ class IEXServiceTests: XCTestCase {
 	}
 	
 	func testDeserializeServicePayloadToModel() {
-		
 		iexService?.getStockQuote("NKE") { quote in
 			XCTAssertNotNil(quote)
 			XCTAssertEqual(quote.companyName, "Nike Inc.")

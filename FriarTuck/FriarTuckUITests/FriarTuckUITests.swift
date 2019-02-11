@@ -25,9 +25,8 @@ class FriarTuckUITests: XCTestCase {
 		super.tearDown()
     }
 	
+	/// Checks first 3 cells (assumes there's at least 3 cells)
 	func testStockTableUX() {
-		
-		// Check StockTable cell labels
 		let cell0 = app.cells["cell_0"]
 		let cell1 = app.cells["cell_1"]
 		let cell2 = app.cells["cell_2"]
@@ -52,6 +51,7 @@ class FriarTuckUITests: XCTestCase {
 		XCTAssertTrue(app.navigationBars.buttons["Friar Tuck"].exists)
 	}
 	
+	/// Checks StockDetailController's UX for correctly displaying all labels
 	func testDetailControllerUX() {
 		let firstCell = app.cells.firstMatch
 		firstCell.tap()

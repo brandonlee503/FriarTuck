@@ -21,10 +21,15 @@ class IEXService {
 	
 	// MARK: - NETWORK
 	
+	/// Fetches a stock quote form IEX Trading
+	///
+	/// - Parameters:
+	///   - stockSymbol: A valid stock symbol e.g. — AAPL
+	///   - completion: Returns a closure with Quote object
 	public func getStockQuote(_ stockSymbol: String, completion: @escaping QuoteResult) {
 		let quotePath = "/1.0/stock/\(stockSymbol.lowercased())/quote/\(stockSymbol)"
 
-		var urlComponents = URLComponents()
+		var urlComponents 		= URLComponents()
 		urlComponents.scheme 	= urlScheme
 		urlComponents.host		= urlHost
 		urlComponents.path 		= quotePath
@@ -34,7 +39,6 @@ class IEXService {
 		}
 		
 		baseNetworkCall(url: url) { statusCode, data in
-			print(url)
 			guard let data = data, let decodedQuote = self.decodeQuote(data) else {
 				return assertionFailure("Cannot decode quote data!")
 			}
@@ -46,6 +50,11 @@ class IEXService {
 		
 	// MARK: - UTILITIES
 	
+	/// Base-level network call.
+	///
+	/// - Parameters:
+	///   - url: URL to fire off dataTask on
+	///   - completion: Returns a closure with StatusCode and Data
 	public func baseNetworkCall(url: URL, completion: @escaping NetworkResult) {
 		let dataTask = URLSession.shared.dataTask(with: url) { data, response, error in			
 			if let error = error {
@@ -60,6 +69,10 @@ class IEXService {
 		dataTask.resume()
 	}
 	
+	/// Attempts to decode Data into Quote model
+	///
+	/// - Parameter data: Data from network call
+	/// - Returns: Quote if decoded properly
 	private func decodeQuote(_ data: Data) -> Quote? {
 		
 		do {

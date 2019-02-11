@@ -15,7 +15,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 	
 	func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
 		window = UIWindow(frame: UIScreen.main.bounds)
-		let navigationController = UINavigationController(rootViewController: StockTableController())
+		let stockTableVC = StockTableController()
+		stockTableVC.stocks = ["AAPL", "AMZN", "NKE", "GOOG", "MSFT", "EBAY"]
+		let navigationController = UINavigationController(rootViewController: stockTableVC)
 		window?.rootViewController = navigationController
 		window?.makeKeyAndVisible()
 		return true
